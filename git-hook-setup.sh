@@ -5,3 +5,5 @@ cat > .git/hooks/pre-commit << 'END'
 
 . ./test.sh
 END
+
+chmod 755 .git/hooks/pre-commit
