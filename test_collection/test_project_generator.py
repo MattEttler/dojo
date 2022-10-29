@@ -13,11 +13,11 @@ class ProjectGeneratorTestCase(unittest.TestCase):
     def test_result_in_categories(self, categories):
         """Ensure that any result returned from get_random_project
 is contained within the input list of categories."""
-        result = cg.get_random_category(categories)
+        result = cg.generate_category(categories)
         assert result in categories
 
     @given(st.lists(st.text(), min_size=0, max_size=0))
     def test_result_in_categories_throws_error_when_categories_empty(self, categories):
         """Ensure proper errors are thrown when no categories exist"""
         with self.assertRaises(errors.NoCategoriesFoundError):
-            cg.get_random_category(categories)
+            cg.generate_category(categories)

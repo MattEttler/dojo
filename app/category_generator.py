@@ -3,7 +3,7 @@ import logging
 import random
 from app import errors
 
-def get_random_category(unordered_categories):
+def generate_category(unordered_categories):
     """Get a single random category selected from the input list"""
     logging.info("Getting random category...")
     if not isinstance(unordered_categories, list) or len(unordered_categories) == 0:

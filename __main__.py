@@ -10,7 +10,7 @@ attributes = ["Artistic", "Functional", "Excessive"]
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
     print("Running project-generator...")
-    category = cg.get_random_category(categories)
+    category = cg.generate_category(categories)
     print(f"Selected category \"{category}\" for your project!")
     attribute = ag.generate_attribute(attributes)
     print(f"Selected attribute \"{attribute}\" for your project!")
