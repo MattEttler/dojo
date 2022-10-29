@@ -1,4 +1,6 @@
-# project-generator
+# dojo
+a tool for deliberate practice. inspired by [this video](https://www.youtube.com/watch?v=QZM3xkVnKYo) the intention is to create an space for deliberate practice.
+generate constraints that provide [contextual interference](https://sportscienceinsider.com/contextual-interference-effect/)
 
 ## dependencies
 Make sure you have the following installed and configured:
