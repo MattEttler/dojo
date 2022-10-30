@@ -18,5 +18,5 @@ pylint **/*.py
 echo "pylint complete!"
 
 echo "## Running mypy..."
-mypy **/*.py
+mypy **/*.py --strict
 echo "mypy complete!"
