@@ -9,6 +9,10 @@ python3 -m coverage run -m unittest discover -v -s ./test_collection/
 python3 -m coverage report
 echo "unittest & coverage complete!"
 
+echo "## Running cyclomatic analysis..."
+python3 -m radon cc .
+echo "cyclomatic analysis complete!"
+
 echo "## Running pylint..."
 pylint **/*.py
 echo "pylint complete!"

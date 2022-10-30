@@ -3,3 +3,4 @@ mypy>=0.971
 pylint>=2.13.9
 flake8>=5.0.4
 coverage>=6.2
+radon>=5.1.0
